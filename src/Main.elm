@@ -234,7 +234,8 @@ mainColumn =
 
 main =
     div
-        []
+        [ style "margin" "0 40px"
+        ]
         [ node "link"
             [ rel "stylesheet"
             , type_ "text/css"
