@@ -4487,7 +4487,7 @@ var $author$project$Main$education = A2(
 								[
 									$elm$html$Html$text('B.Sc. + M.Sc of Software En.')
 								])),
-							$elm$html$Html$text(', Technion (2025-today)')
+							$elm$html$Html$text(', Technion (2025-Today)')
 						])),
 					A2(
 					$elm$html$Html$li,
@@ -4501,7 +4501,7 @@ var $author$project$Main$education = A2(
 								[
 									$elm$html$Html$text('Magshimim')
 								])),
-							$elm$html$Html$text(', (2019-2022)')
+							$elm$html$Html$text(' (2019-2022)')
 						])),
 					A2(
 					$elm$html$Html$li,
@@ -4543,6 +4543,19 @@ var $author$project$Main$projects = A2(
 				[
 					$elm$html$Html$text('Projects')
 				])),
+			A2(
+			$elm$html$Html$ul,
+			_List_Nil,
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$li,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$elm$html$Html$text('')
+						]))
+				])),
 			$author$project$Main$p_('\n            For sure I can find something to say here, maybe look at old resumes\n        ')
 		]));
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
@@ -4552,9 +4565,9 @@ var $author$project$Main$subColumn = function (c) {
 		$elm$html$Html$div,
 		_List_fromArray(
 			[
-				A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-				A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
-				A2($elm$html$Html$Attributes$style, 'flex-basis', '50%')
+				A2($elm$html$Html$Attributes$style, 'width', '50%'),
+				A2($elm$html$Html$Attributes$style, 'display', 'inline-block'),
+				A2($elm$html$Html$Attributes$style, 'vertical-align', 'top')
 			]),
 		c);
 };
@@ -4580,14 +4593,14 @@ var $author$project$Main$teaching = A2(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text('Select Topics in Formal Proofs - Winter 2025/26')
+							$elm$html$Html$text('Select Topics in Formal Proofs (2025)')
 						])),
 					A2(
 					$elm$html$Html$li,
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text('Programming Languages - Spring 2025')
+							$elm$html$Html$text('Programming Languages (2025)')
 						])),
 					A2(
 					$elm$html$Html$li,
@@ -4647,11 +4660,7 @@ var $author$project$Main$work = A2(
 		]));
 var $author$project$Main$contentRow = A2(
 	$elm$html$Html$div,
-	_List_fromArray(
-		[
-			A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-			A2($elm$html$Html$Attributes$style, 'flex-direction', 'row')
-		]),
+	_List_Nil,
 	_List_fromArray(
 		[
 			$author$project$Main$subColumn(
@@ -4659,7 +4668,45 @@ var $author$project$Main$contentRow = A2(
 				[$author$project$Main$education, $author$project$Main$teaching])),
 			$author$project$Main$subColumn(
 			_List_fromArray(
-				[$author$project$Main$projects, $author$project$Main$work]))
+				[$author$project$Main$work, $author$project$Main$projects]))
+		]));
+var $elm$html$Html$a = _VirtualDom_node('a');
+var $elm$html$Html$br = _VirtualDom_node('br');
+var $elm$html$Html$footer = _VirtualDom_node('footer');
+var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
+var $author$project$Main$horizontalSeparator = A2(
+	$elm$html$Html$div,
+	_List_fromArray(
+		[
+			$elm$html$Html$Attributes$class('horizontal-separator')
+		]),
+	_List_Nil);
+var $author$project$Main$footerRow = A2(
+	$elm$html$Html$footer,
+	_List_Nil,
+	_List_fromArray(
+		[
+			$author$project$Main$horizontalSeparator,
+			A2(
+			$elm$html$Html$p,
+			_List_Nil,
+			_List_fromArray(
+				[
+					$elm$html$Html$text('\n                I made this page with a programming language called Elm, which\n                I love.\n            '),
+					A2($elm$html$Html$br, _List_Nil, _List_Nil),
+					$elm$html$Html$text('Source code can be found on '),
+					A2(
+					$elm$html$Html$a,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$href('github.com/yonatan-reicher/cv')
+						]),
+					_List_fromArray(
+						[
+							$elm$html$Html$text('GitHub')
+						])),
+					$elm$html$Html$text('.')
+				]))
 		]));
 var $author$project$Main$abstract = A2(
 	$elm$html$Html$div,
@@ -4787,26 +4834,16 @@ var $author$project$Main$headerRow = A2(
 			_List_fromArray(
 				[$author$project$Main$abstract]))
 		]));
-var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
-var $author$project$Main$horizontalSeparator = A2(
-	$elm$html$Html$div,
-	_List_fromArray(
-		[
-			$elm$html$Html$Attributes$class('horizontal-separator')
-		]),
-	_List_Nil);
 var $author$project$Main$mainColumn = A2(
 	$elm$html$Html$div,
 	_List_fromArray(
 		[
-			A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-			A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
 			A2($elm$html$Html$Attributes$style, 'max-width', '1000px'),
 			A2($elm$html$Html$Attributes$style, 'margin', 'auto'),
 			A2($elm$html$Html$Attributes$style, 'margin-top', '40px')
 		]),
 	_List_fromArray(
-		[$author$project$Main$headerRow, $author$project$Main$horizontalSeparator, $author$project$Main$contentRow]));
+		[$author$project$Main$headerRow, $author$project$Main$horizontalSeparator, $author$project$Main$contentRow, $author$project$Main$footerRow]));
 var $elm$virtual_dom$VirtualDom$node = function (tag) {
 	return _VirtualDom_node(
 		_VirtualDom_noScript(tag));

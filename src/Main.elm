@@ -114,11 +114,11 @@ education =
         , ul []
             [ li []
                 [ strong [] [ text "B.Sc. + M.Sc of Software En." ]
-                , text ", Technion (2025-today)"
+                , text ", Technion (2025-Today)"
                 ]
             , li []
                 [ strong [] [ text "Magshimim" ]
-                , text ", (2019-2022)"
+                , text " (2019-2022)"
                 ]
             , li []
                 [ text "Talented Youth in Mathematics"
@@ -136,7 +136,10 @@ projects =
     div
         []
         [ h2 [] [ text "Projects" ]
-        , 
+        , ul
+            []
+            [ li [] [ text "Affogato (2021-2022)" ]
+            ]
         , p_ """
             For sure I can find something to say here, maybe look at old resumes
         """
@@ -164,8 +167,8 @@ teaching =
         [ h2 [] [ text "Teaching Experience" ]
         , ul
             []
-            [ li [] [ text "Select Topics in Formal Proofs - Winter 2025/26" ]
-            , li [] [ text "Programming Languages - Spring 2025" ]
+            [ li [] [ text "Select Topics in Formal Proofs (2025)" ]
+            , li [] [ text "Programming Languages (2025)" ]
             , li [] [ text "Software Engineering, Ort Guttman High School (2023-2024)" ]
             , li [] [ text "Intro to Programming, Magshimim (2021)" ]
             ]
@@ -174,18 +177,16 @@ teaching =
 
 subColumn c =
     div
-        [ style "display" "flex"
-        , style "flex-direction" "column"
-        , style "flex-basis" "50%"
+        [ style "width" "50%"
+        , style "display" "inline-block"
+        , style "vertical-align" "top"
         ]
         c
 
 
 contentRow =
     div
-        [ style "display" "flex"
-        , style "flex-direction" "row"
-        ]
+        []
         [ subColumn
             [ education
             , teaching
@@ -197,17 +198,33 @@ contentRow =
         ]
 
 
+footerRow =
+    footer
+        []
+        [ horizontalSeparator
+        , p []
+            [ text """
+                I made this page with a programming language called Elm, which
+                I love.
+            """
+            , br [] []
+            , text "Source code can be found on "
+            , a [ href "github.com/yonatan-reicher/cv" ] [ text "GitHub" ]
+            , text "."
+            ]
+        ]
+
+
 mainColumn =
     div
-        [ style "display" "flex"
-        , style "flex-direction" "column"
-        , style "max-width" "1000px"
+        [ style "max-width" "1000px"
         , style "margin" "auto"
         , style "margin-top" "40px"
         ]
         [ headerRow
         , horizontalSeparator
         , contentRow
+        , footerRow
         ]
 
 
