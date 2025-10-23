@@ -76,8 +76,9 @@ titles =
             [ style "margin" "0"
             , style "padding" "0"
             -- Get the size just right!
-            , style "font-size" "2.513em"
+            , style "font-size" "clamp(1rem, 3.7vw, 2.513em)"
             , style "transform" "translateX(1.5px)"
+            , style "text-wrap" "nowrap"
             ]
             [ text "Jonathan Reicher" ]
         , me
