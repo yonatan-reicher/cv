@@ -136,13 +136,17 @@ projects =
     div
         []
         [ h2 [] [ text "Projects" ]
+        , p [ style "margin-bottom" "0" ] [ text """
+            Some interesting projects I had the chance to work on:
+        """ ]
         , ul
-            []
-            [ li [] [ text "Affogato (2021-2022)" ]
+            [ style "margin-top" "5px" ]
+            [ li [] [ text "Lean 4 Research Project (2025)" ]
+            , li [] [ text "Data Science project for Idf (2024)" ]
+            , li [] [ text "Dependent Typing with Equality Saturation, Technion (2023-2024)" ]
+            , li [] [ text "Deep Learning final project for Magshimim (2021-2022)" ]
+            , li [] [ strong [] [ text "C-to-x86 compiler" ], text " (2019-2020)" ]
             ]
-        , p_ """
-            For sure I can find something to say here, maybe look at old resumes
-        """
         ]
 
 

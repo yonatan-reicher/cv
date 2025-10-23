@@ -27,6 +27,10 @@ a {
     color: var(--pop);
 }
 
+ul, ol {
+    margin-right: 40px;
+}
+
 .horizontal-separator {
     width: 100%;
     margin: 40px auto;

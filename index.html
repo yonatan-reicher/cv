@@ -4522,15 +4522,8 @@ var $author$project$Main$education = A2(
 				]))
 		]));
 var $elm$html$Html$p = _VirtualDom_node('p');
-var $author$project$Main$p_ = function (s) {
-	return A2(
-		$elm$html$Html$p,
-		_List_Nil,
-		_List_fromArray(
-			[
-				$elm$html$Html$text(s)
-			]));
-};
+var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Main$projects = A2(
 	$elm$html$Html$div,
 	_List_Nil,
@@ -4544,8 +4537,21 @@ var $author$project$Main$projects = A2(
 					$elm$html$Html$text('Projects')
 				])),
 			A2(
+			$elm$html$Html$p,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'margin-bottom', '0')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('\n            Some interesting projects I had the chance to work on:\n        ')
+				])),
+			A2(
 			$elm$html$Html$ul,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'margin-top', '5px')
+				]),
 			_List_fromArray(
 				[
 					A2(
@@ -4553,13 +4559,45 @@ var $author$project$Main$projects = A2(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text('')
+							$elm$html$Html$text('Lean 4 Research Project (2025)')
+						])),
+					A2(
+					$elm$html$Html$li,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$elm$html$Html$text('Data Science project for Idf (2024)')
+						])),
+					A2(
+					$elm$html$Html$li,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$elm$html$Html$text('Dependent Typing with Equality Saturation, Technion (2023-2024)')
+						])),
+					A2(
+					$elm$html$Html$li,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$elm$html$Html$text('Deep Learning final project for Magshimim (2021-2022)')
+						])),
+					A2(
+					$elm$html$Html$li,
+					_List_Nil,
+					_List_fromArray(
+						[
+							A2(
+							$elm$html$Html$strong,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text('C-to-x86 compiler')
+								])),
+							$elm$html$Html$text(' (2019-2020)')
 						]))
-				])),
-			$author$project$Main$p_('\n            For sure I can find something to say here, maybe look at old resumes\n        ')
+				]))
 		]));
-var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
-var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Main$subColumn = function (c) {
 	return A2(
 		$elm$html$Html$div,
@@ -4708,6 +4746,15 @@ var $author$project$Main$footerRow = A2(
 					$elm$html$Html$text('.')
 				]))
 		]));
+var $author$project$Main$p_ = function (s) {
+	return A2(
+		$elm$html$Html$p,
+		_List_Nil,
+		_List_fromArray(
+			[
+				$elm$html$Html$text(s)
+			]));
+};
 var $author$project$Main$abstract = A2(
 	$elm$html$Html$div,
 	_List_Nil,
@@ -4791,7 +4838,7 @@ var $author$project$Main$titles = A2(
 				[
 					A2($elm$html$Html$Attributes$style, 'margin', '0'),
 					A2($elm$html$Html$Attributes$style, 'padding', '0'),
-					A2($elm$html$Html$Attributes$style, 'font-size', '2.52em'),
+					A2($elm$html$Html$Attributes$style, 'font-size', '2.513em'),
 					A2($elm$html$Html$Attributes$style, 'transform', 'translateX(1.5px)')
 				]),
 			_List_fromArray(
