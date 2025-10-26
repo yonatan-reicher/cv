@@ -207,9 +207,10 @@ footerRow =
     footer
         []
         [ horizontalSeparator
-        , p []
+        , p 
+            [ style "opacity" "70%" ]
             [ text """
-                I made this page with a programming language called Elm, which
+                Made with a programming language called Elm, which
                 I love.
             """
             , br [] []

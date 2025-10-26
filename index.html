@@ -4727,10 +4727,13 @@ var $author$project$Main$footerRow = A2(
 			$author$project$Main$horizontalSeparator,
 			A2(
 			$elm$html$Html$p,
-			_List_Nil,
 			_List_fromArray(
 				[
-					$elm$html$Html$text('\n                I made this page with a programming language called Elm, which\n                I love.\n            '),
+					A2($elm$html$Html$Attributes$style, 'opacity', '70%')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('\n                Made with a programming language called Elm, which\n                I love.\n            '),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
 					$elm$html$Html$text('Source code can be found on '),
 					A2(
