@@ -10,12 +10,16 @@ body {
     font-family: "Noto Sans", Arial, sans-serif;
 }
 
-p, li, span, h3 {
-    color: gray;
-}
-
 h1 {
     color: var(--pop);
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+p, li, span, h3 {
+    color: gray;
 }
 
 strong {
@@ -36,4 +40,12 @@ ul, ol {
     margin: 40px auto;
     border: .1vh solid #dbdbdb;
     border-radius: 10px;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
 }
